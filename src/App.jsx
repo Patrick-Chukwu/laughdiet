@@ -1,8 +1,19 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+
 
 const App = () => {
   return (
-    <div className='text text-primary'>App</div>
+    <div>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+      <Footer/>
+    </div>
   )
 }
 
