@@ -32,7 +32,7 @@ const Navbar = () => {
          <Link to='/artists' className='hover:text-primary'>Artists</Link>
             </div>
             <ul className="text-xl font-semibold hidden nav-links lg:flex lg:justify-center  lg:items-center lg:gap-4 text-white">
-       <Link to='/' className='w-42 max-w-42 text-xl font-semibold border border-secondary hover:border-primary hover:text-secondary text-ash py-2 px-12 rounded-sm lg:rounded-lg md:rounded-md xl:rounded-xl'> Get Ticket</Link>
+       <Link to='/' className='w-42 max-w-42 text-xl font-semibold border border-secondary hover:border-primary hover:text-secondary text-primary py-2 px-12 rounded-sm lg:rounded-lg md:rounded-md xl:rounded-xl'> Get Ticket</Link>
        {/* <Link to='/register' className='text-xl font-semibold text-center w-40 max-w-42 bg-secondary py-2 px-4 rounded-sm hover:bg-primary lg:rounded-lg md:rounded-md xl:rounded-xl'>Try for free</Link> */}
      </ul>
           </div>
@@ -40,7 +40,7 @@ const Navbar = () => {
             <button
               onClick={toggleMenu}
               type="button"
-              className="bg-white inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-primary hover:bg-white focus:outline-none focus:bg-white focus:text-primary"
+              className="bg-primary text-black inline-flex items-center justify-center p-2 rounded-lg hover:text-black hover:bg-secondary focus:outline-none focus:bg-secondary focus:text-back"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -60,7 +60,7 @@ const Navbar = () => {
       </div>
 
       <div className={`${isOpen ? 'block' : 'hidden'} lg:hidden`} id="mobile-menu">
-        <div className="max-h-full px-1 pt-2 pb-60 space-y-1 sm:px-3 flex flex-col gap-2 text-xl font-normal text-white">
+        <div className="h-screen px-1 pt-2 pb-60 space-y-1 sm:px-3 flex flex-col gap-2 text-xl font-normal text-white">
 
           <Link onClick={closeMenu}
  to="/" className=" font-normal text-xl block px-3 py-2 rounded-md hover:bg-primary">
@@ -75,7 +75,7 @@ to="/about" className="font-normal text-xl block px-3 py-2 rounded-md hover:bg-p
             Artists
           </Link>
           <Link to='/' onClick={closeMenu}
- className='text-silver text-xl block py-2 px-6 w-40 rounded-md text-left font-medium border hover:border-primary hover:text-secondary  border-secondary'> Get ticket</Link>
+ className='text-primary text-xl block py-2 px-6 w-40 rounded-md text-left font-medium border hover:border-primary hover:text-secondary  border-secondary'> Get ticket</Link>
        {/* <Link to='/register' onClick={closeMenu}
  className='bg-secondary text-white py-2 px-6 w-40 max-w-44 hover:bg-primary rounded-md lg:rounded-lg md:rounded-md xl:rounded-xl '>Try for free</Link> */}
         </div>
